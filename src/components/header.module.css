@@ -1,0 +1,23 @@
+.header {
+  background-color: #fff;
+  margin: 0 auto;
+  padding: var(--space-l);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menuLink {
+  background-color: var(--color-secondary);
+  border-radius: var(--border-radius-m);
+  color: var(--color-text);
+  text-decoration: none;
+  padding: var(--space-s);
+}
+
+.menuLink:hover,
+.menuLink:focus {
+  background-color: var(--color-primary);
+}

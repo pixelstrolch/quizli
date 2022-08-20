@@ -1,0 +1,165 @@
+[
+  {
+    "quizId": "laufentaler-wappen",
+    "title": "Laufentaler Wappen",
+    "category": "Geografie",
+    "questions": [
+      {
+        "questionText": "Welches Wappen ist das?",
+        "image": "./assets/laufentaler-wappen/brislach.png",
+        "imageAlt": "Wappen Frage 1",
+        "imageCredit": "Quelle: Wikipedia, Jwnabd, Public Domain",
+        "answerOptions": [
+          { "answerText": "Grellingen", "isCorrect": false },
+          { "answerText": "Brislach", "isCorrect": true },
+          { "answerText": "Blauen", "isCorrect": false },
+          { "answerText": "Wahlen", "isCorrect": false }
+        ]
+      },
+      {
+        "questionText": "Welches Wappen ist das?",
+        "image": "./assets/laufentaler-wappen/zwingen.png",
+        "imageAlt": "Wappen Frage 2",
+        "imageCredit": "Quelle: Wikipedia, Gemeinfrei",
+        "answerOptions": [
+          { "answerText": "Roggenburg", "isCorrect": false },
+          { "answerText": "Röschenz", "isCorrect": false },
+          { "answerText": "Zwingen", "isCorrect": true },
+          { "answerText": "Dittingen", "isCorrect": false }
+        ]
+      },
+      {
+        "questionText": "Welches Wappen ist das?",
+        "image": "./assets/laufentaler-wappen/burg.png",
+        "imageAlt": "Wappen Frage 3",
+        "imageCredit": "Quelle: Wikipedia, Jwnabd, Public Domain",
+        "answerOptions": [
+          { "answerText": "Burg im Leimental", "isCorrect": true },
+          { "answerText": "Liesberg", "isCorrect": false },
+          { "answerText": "Laufen", "isCorrect": false },
+          { "answerText": "Nenzlingen", "isCorrect": false }
+        ]
+      },
+      {
+        "questionText": "Welches Wappen ist das?",
+        "image": "./assets/laufentaler-wappen/duggingen.png",
+        "imageAlt": "Wappen Frage 4",
+        "imageCredit": "Quelle: Wikipedia, Rauenstein, CC BY-SA 3.0",
+        "answerOptions": [
+          { "answerText": "Duggingen", "isCorrect": true },
+          { "answerText": "Liesberg", "isCorrect": false },
+          { "answerText": "Dittingen", "isCorrect": false },
+          { "answerText": "Zwingen", "isCorrect": false }
+        ]
+      },
+      {
+        "questionText": "Welches Wappen ist das?",
+        "image": "./assets/laufentaler-wappen/roggenburg.png",
+        "imageAlt": "Wappen Frage 5",
+        "imageCredit": "Quelle: Wikipedia, Rauenstein, CC BY-SA 3.0",
+        "answerOptions": [
+          { "answerText": "Burg im Leimental", "isCorrect": false },
+          { "answerText": "Wahlen", "isCorrect": false },
+          { "answerText": "Grellingen", "isCorrect": false },
+          { "answerText": "Roggenburg", "isCorrect": true }
+        ]
+      },
+      {
+        "questionText": "Welches Wappen ist das?",
+        "image": "./assets/laufentaler-wappen/laufen.png",
+        "imageAlt": "Wappen Frage 6",
+        "imageCredit": "Quelle: Wikipedia, Gemeinfrei",
+        "answerOptions": [
+          { "answerText": "Nenzlingen", "isCorrect": false },
+          { "answerText": "Laufen", "isCorrect": true },
+          { "answerText": "Röschenz", "isCorrect": false },
+          { "answerText": "Blauen", "isCorrect": false }
+        ]
+      },
+      {
+        "questionText": "Welches Wappen ist das?",
+        "image": "./assets/laufentaler-wappen/dittingen.png",
+        "imageAlt": "Wappen Frage 7",
+        "imageCredit": "Quelle: Wikipedia, Gemeinfrei",
+        "answerOptions": [
+          { "answerText": "Brislach", "isCorrect": false },
+          { "answerText": "Duggingen", "isCorrect": false },
+          { "answerText": "Dittingen", "isCorrect": true },
+          { "answerText": "Laufen", "isCorrect": false }
+        ]
+      },
+      {
+        "questionText": "Welches Wappen ist das?",
+        "image": "./assets/laufentaler-wappen/liesberg.png",
+        "imageAlt": "Wappen Frage 8",
+        "imageCredit": "Quelle: Wikipedia, Rauenstein, CC BY-SA 3.0",
+        "answerOptions": [
+          { "answerText": "Duggingen", "isCorrect": false },
+          { "answerText": "Zwingen", "isCorrect": false },
+          { "answerText": "Liesberg", "isCorrect": true },
+          { "answerText": "Burg im Leimental", "isCorrect": false }
+        ]
+      },
+      {
+        "questionText": "Welches Wappen ist das?",
+        "image": "./assets/laufentaler-wappen/wahlen.png",
+        "imageAlt": "Wappen Frage 9",
+        "imageCredit": "Quelle: Wikipedia, Rauenstein, CC BY-SA 3.0",
+        "answerOptions": [
+          { "answerText": "Brislach", "isCorrect": false },
+          { "answerText": "Wahlen", "isCorrect": true },
+          { "answerText": "Blauen", "isCorrect": false },
+          { "answerText": "Roggenburg", "isCorrect": false }
+        ]
+      },
+      {
+        "questionText": "Welches Wappen ist das?",
+        "image": "./assets/laufentaler-wappen/grellingen.png",
+        "imageAlt": "Wappen Frage 10",
+        "imageCredit": "Quelle: Wikipedia, CC BY-SA 3.0",
+        "answerOptions": [
+          { "answerText": "Grellingen", "isCorrect": true },
+          { "answerText": "Nenzlingen", "isCorrect": false },
+          { "answerText": "Laufen", "isCorrect": false },
+          { "answerText": "Röschenz", "isCorrect": false }
+        ]
+      },
+      {
+        "questionText": "Welches Wappen ist das?",
+        "image": "./assets/laufentaler-wappen/blauen.png",
+        "imageAlt": "Wappen Frage 11",
+        "imageCredit": "Quelle: Wikipedia, Jwnabd, Public Domain",
+        "answerOptions": [
+          { "answerText": "Brislach", "isCorrect": false },
+          { "answerText": "Blauen", "isCorrect": true },
+          { "answerText": "Wahlen", "isCorrect": false },
+          { "answerText": "Nenzlingen", "isCorrect": false }
+        ]
+      },
+      {
+        "questionText": "Welches Wappen ist das?",
+        "image": "./assets/laufentaler-wappen/roeschenz.png",
+        "imageAlt": "Wappen Frage 12",
+        "imageCredit": "Quelle: Wikipedia, Rauenstein, CC BY-SA 3.0",
+        "answerOptions": [
+          { "answerText": "Duggingen", "isCorrect": false },
+          { "answerText": "Zwingen", "isCorrect": false },
+          { "answerText": "Roggenburg", "isCorrect": false },
+          { "answerText": "Röschenz", "isCorrect": true }
+        ]
+      },
+      {
+        "questionText": "Welches Wappen ist das?",
+        "image": "./assets/laufentaler-wappen/nenzlingen.png",
+        "imageAlt": "Wappen Frage 13",
+        "imageCredit": "Quelle: Wikipedia, Rauenstein, CC BY-SA 3.0",
+        "answerOptions": [
+          { "answerText": "Burg im Leimental", "isCorrect": false },
+          { "answerText": "Laufen", "isCorrect": false },
+          { "answerText": "Nenzlingen", "isCorrect": true },
+          { "answerText": "Liesberg", "isCorrect": false }
+        ]
+      }
+    ]
+  }
+]
