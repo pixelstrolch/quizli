@@ -3,34 +3,31 @@
 }
 
 .quizBox {
-  background-color: #fff;
+  background-color: var(--color-primary-light);
   border-radius: var(--border-radius-l);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
-.scoreSection {
-  display: flex;
-  font-size: var(--font-l);
-  align-items: center;
-}
-
-.result {
-  padding: var(--space-l);
-  width: 100%;
-}
-
-/* Question Header */
+/* Header */
 
 .header {
   background-color: var(--color-primary-dark);
   border-radius: 20px 20px 0 0;
-  padding: var(--space-l);
+  color: var(--color-gray-light);
+  padding: var(--space-m);
   width: 100%;
 }
 
-.header h2 {
-  color: #fff;
+@media screen and (min-width: 56rem) {
+  .header {
+    padding: var(--space-l);
+  }
+}
+
+.questionCount {
+  color: var(--color-gray-light);
   font-size: 1rem;
+  line-height: var(--line-height-dense);
   margin: 0;
   text-shadow: 2px 2px 0px rgba(0,0,0,.2);
 }
@@ -47,32 +44,46 @@
   }
 }
 
-/* Header section */
+/* Question section */
 
 .questionSection {
-  padding: var(--space-l);
+  padding: var(--space-s);
   width: 100%;
 }
 
-.questionCount {
-  margin-bottom: 20px;
-}
+@media screen and (min-width: 56rem) {
+  .questionSection {
+    padding: var(--space-l);
+  }
 
-.questionCountNo {
-  font-size: var(--font-l);
-  padding-right: .1em;
+  .questionCurrent {
+    font-size: var(--font-l);
+    padding-right: .1em;
+  }  
 }
 
 /* Question section */
 
 .questionText {
-  font-size: var(--font-l);
-  margin: 0 0 1em;
+  font-size: var(--font-m);
+  font-weight: bold;
+  line-height: var(--line-height-normal);
+}
+
+@media screen and (min-width: 56rem) {
+  .questionText {
+    font-size: var(--font-l);
+    line-height: var(--line-height-dense);
+  }
 }
 
 .questionImage {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--space-m);
+  padding: var(--space-s);
   width: auto;
-  max-height: 10rem;
 }
 
 .timerText {
@@ -97,13 +108,33 @@
 }
 
 .answerSection button {
-  margin: .5rem 0;
+  margin: var(--space-xs) 0 var(--space-xs) 0;
 }
 
 .correct {
-  background-color: #2f922f;
+  background-color: var(--color-correct);
 }
 
-.incorrect {
-  background-color: #ff3333;
+.wrong {
+  background-color: var(--color-wrong);
+}
+
+
+/* Score */
+
+.scoreSection {
+  display: flex;
+  font-size: var(--font-l);
+  align-items: center;
+}
+
+.result {
+  padding: var(--space-m);
+  width: 100%;
+}
+
+@media screen and (min-width: 56rem) {
+  .result {
+    padding: var(--space-l);
+  }
 }

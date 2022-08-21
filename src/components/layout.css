@@ -2,13 +2,21 @@
   --border-radius-s: 2px;
   --border-radius-m: 5px;
   --border-radius-l: 20px;
-  --color-text: #333;
-  --color-primary: #03a9f4;
-  --color-primary-light: #67daff;
-  --color-primary-dark: #007ac1;
-  --color-secondary: #ffca28;
-  --color-secondary-light: #fffd61;
-  --color-secondary-dark: #c79a00;
+  --color-gray-light: #ECEFF1;
+  --color-gray: #607D8B;
+  --color-gray-dark: #263238;
+  --color-primary: #03A9F4;
+  --color-primary-light: #E1F5FE;
+  --color-primary-dark: #0277BD;
+  --color-secondary: #FFCA28;
+  --color-secondary-light: #FFF8E1;
+  --color-secondary-dark: #FF8F00;
+  --color-correct: #4CAF50;
+  --color-correct-light: #E0F2F1;
+  --color-correct-dark: #004D40;
+  --color-wrong: #F44336;
+  --color-wrong-light: #FFEBEE;
+  --color-wrong-dark: #B71C1C;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
@@ -26,8 +34,8 @@
   --space-l: 1.5rem;
   --space-xl: 2rem;
   --size-content: 54rem;
-  --size-gutter: var(--space-xl);
-  --size-gap: var(--space-xl);
+  --size-gutter: var(--space-m);
+  --size-gap: var(--space-m);
 }
 
 html {
@@ -42,7 +50,7 @@ body {
   -moz-osx-font-soothing: grayscale;
   -webkit-font-soothing: antialiased;
   background-color: var(--color-primary);
-  color: var(--color-text);
+  color: var(--color-gray-dark);
   font-family: sans-serif;
   font-family: var(--font-sans);
   font-weight: normal;
@@ -61,6 +69,18 @@ main {
   max-width: var(--size-content);
   padding: var(--size-gutter);
   width: 100%;
+}
+
+#site-footer {
+  font-size: var(--font-s);
+  margin-top: auto;
+  padding: var(--space-m);
+}
+
+@media screen and (min-width: 56rem) {
+  #site-footer {
+    padding: var(--space-l);
+  }
 }
 
 
@@ -82,6 +102,10 @@ a:hover {
   text-decoration: none;
 }
 
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
 abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;
@@ -96,18 +120,6 @@ strong {
 
 dfn {
   font-style: italic;
-}
-
-h1 {
-  font-size: var(--font-xl);
-  letter-spacing: -0.01em;  margin: 0;
-  line-height: var(--line-height-dense);
-  margin-bottom: 3rem;
-  padding: 0;
-}
-
-h1 > b {
-  color: var(--color-primary);
 }
 
 img {
@@ -147,9 +159,11 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  background-color: var(--color-primary-dark);
-  color: #fff;
+@media screen and (min-width: 56rem) {
+  button:hover {
+    background-color: var(--color-primary-dark);
+    color: var(--color-gray-light);
+  }
 }
 
 button:focus {
@@ -171,20 +185,6 @@ samp {
   line-height: inherit;
 }
 
-
-
-* {
-  box-sizing: inherit;
-}
-
-*:before {
-  box-sizing: inherit;
-}
-
-*:after {
-  box-sizing: inherit;
-}
-
 hgroup,
 img,
 figure,
@@ -196,7 +196,7 @@ dd,
 p {
   margin: 0;
   padding: 0;
-  margin-bottom: var(--space-m);
+  margin-top: var(--space-m);
 }
 
 ul,
@@ -287,9 +287,9 @@ acronym {
 
 tt,
 code {
-  background-color: var(--color-code-bg);
+  background-color: var(--color-gray-dark-bg);
   border-radius: var(--border-radius-m);
-  color: var(--color-code);
+  color: var(--color-gray-dark);
   font-family: var(--font-mono);
   padding-bottom: 0.25em;
   padding-top: 0.25em;

@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
+import Header from "../components/header"
+
 import * as style from "../components/quiz.module.css"
 
 export default function Quiz({ data }) {
@@ -24,29 +26,25 @@ export default function Quiz({ data }) {
   const image = getImage(quiz.questions[currentQuestion].image)
 
   return (
-    <Layout>
-      <>
+    <>
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`}  quizTitle={data.quizData.title} />
+      <Layout>
         <article className={style.quiz}>
-          <header>
-            <h1>{quiz.title}</h1>
-          </header>
           {showScore ? (
             <div className={style.quizBox}>
               <div className={style.header}>
                 <h2>Das Quiz ist beendet!</h2>
               </div>
               <div className={style.result}>
-                <div className={style.questionNoSection}>
-                  <h3>Du hast {score} von maximal {quiz.questions.length} Punkten erreicht.</h3>
-                  <p><button onClick={() => window.location.reload()}>Quiz neu beginnen</button></p>
-                </div>
+                <h3>Du hast {score} von maximal {quiz.questions.length} Punkten erreicht.</h3>
+                <p><button onClick={() => window.location.reload()}>Quiz neu beginnen</button></p>
               </div>
             </div>
           ) : (
             <div className={style.quizBox}>
               <div className={style.header}>
-                <h2>
-                  <span className={style.questionCountNo}>Frage {currentQuestion + 1}</span> von {quiz.questions.length}
+                <h2 className={style.questionCount}>
+                  <span className={style.questionCurrent}>Frage {currentQuestion + 1}</span> von {quiz.questions.length}
                 </h2>
               </div>
               <div className={style.qa}>
@@ -69,12 +67,17 @@ export default function Quiz({ data }) {
             </div>
           )}
         </article>
-      </>
-    </Layout>
+      </Layout>
+    </>
   )
 }
 export const query = graphql`
   query($quizId: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     quizData(quizId: { eq: $quizId } ) {
       title
       questions {
